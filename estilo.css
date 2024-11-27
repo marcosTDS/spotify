@@ -58,7 +58,8 @@ h1 {
     text-align: center;
     font-size: 110px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 15%;
+    margin-top: 200%;
+    
     color: white;
     
 }
@@ -75,6 +76,7 @@ button {
     border: 2px solid white;
     background: #4fc455;
     text-align: center;
+    
 }
 
 .a {
@@ -100,6 +102,7 @@ button {
 body {
     background: linear-gradient(90deg, #444,#000);
     
+    
 }
 
 img {
@@ -117,7 +120,10 @@ img:hover {
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 550px) {
+    * {
+        margin: 0;
+    }
 
     body {
         overflow-x: hidden;
@@ -126,18 +132,22 @@ img:hover {
         position: absolute;
         top: 3%;
         right: 0;
+        padding: 0;
         width: 30%;
         height: 100px;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        transform: translateX(100%);
+       
     }
     .navegacao li {
         margin-left: 0;
     }
     .responsivo {
         display: block;
-        padding: 0 0 0 30%;
+       margin: 0 0 0 30%;
+       padding: 0;
     }
     
     .imagem {
@@ -147,34 +157,25 @@ img:hover {
     }
     img {
         
-        margin-top: -6%;
+        margin-top: -8%;
     }
     h1 {
+        margin: 0;
+        padding: 0;
         width: 100%;
         font-size: 30px;
-        margin-top: 60%;
-       
-    }
-    .navegacao {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vh;
-        height: 92vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-    }
-    .navegacao li {
-       
-        opacity: 0;
     }
     .responsivo {
         display: block;
-       
+        padding: 0;
+    }
+    
+    button {
+        border: 1px solid white;
+        padding: 0;
 
     }
+    
     
 
 }
