@@ -104,3 +104,62 @@ span {
     color: #04ac0c;
     font-weight: bolder;
 }
+
+@media (max-width: 550px) {
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        margin: 0;
+    }
+    footer {
+        padding: 0;
+        width: 100.6%;
+        margin-top: -31%;
+    }
+    .terc {
+        margin-top: 35.5%;
+    }
+    .celular {
+        grid-template-columns: none;
+    }
+    .seg {
+       text-align: center;
+       margin: -220% 0 0 0;
+       
+
+    }
+    .prim {
+        margin-left: 10%;
+        margin-top: 60%;
+        top: 25px;
+        width: 80%;
+        height: 600px;
+    }
+    .circulo {
+        position: absolute;
+        margin: 70% 0 0 50%;
+    }
+    .list {
+        position: absolute;
+        margin-top: 23%;
+        font-size: 15px;
+    }
+    .p {
+        position: absolute;
+        margin-top: 10%;
+    }
+    .melhor {
+        position: absolute;
+        margin-top: 7%;
+    }
+    .image {
+        margin-top: 10%;
+        width: 35%;
+    }
+    img {
+        margin-top: 10%;
+        width: 35%;
+    }
+    
+}
