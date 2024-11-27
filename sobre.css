@@ -43,9 +43,9 @@ img:hover {
         overflow-x: hidden;
     }
     .text {
-        margin: 0 0 0 -2%;
+        margin: 0 0 0 -5%;
         padding: 0;
-        font-size: 15px;
+        font-size: 12px;
         
     }
     .image {
@@ -69,5 +69,6 @@ img:hover {
     }
     h1 {
         text-align: center;
+        font-size: 21px;
     
 }
