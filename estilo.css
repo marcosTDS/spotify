@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    height: 10vh;
+    padding: 0 0 0 53%;
+    
+}
+
+.navegacao {
+    list-style: none;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.navegacao li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.responsivo {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.responsivo div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+   
+
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: purple;
+}
+
+h1 {
+    text-align: center;
+    font-size: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15%;
+    color: white;
+    
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+button {
+    padding: 2px 2px 2px 2px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: #4fc455;
+    text-align: center;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.b {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.premium {
+    background: black;
+   
+    
+    
+}
+
+body {
+    background: linear-gradient(90deg, #444,#000);
+    
+}
+
+img {
+    position: absolute;
+    max-width: 160px;
+    margin-top: -3.5%;
+    padding: 0 0 0 3%;
+    transition: .8s all ease-in-out;
+    width: 100%;
+    
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+
+@media(max-width: 900px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    .navegacao {
+        position: absolute;
+        top: 3%;
+        right: 0;
+        width: 30%;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navegacao li {
+        margin-left: 0;
+    }
+    .responsivo {
+        display: block;
+        padding: 0 0 0 30%;
+    }
+    
+    .imagem {
+        
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        
+        margin-top: -6%;
+    }
+    h1 {
+        width: 100%;
+        font-size: 30px;
+        margin-top: 60%;
+       
+    }
+    .navegacao {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vh;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .navegacao li {
+       
+        opacity: 0;
+    }
+    .responsivo {
+        display: block;
+       
+
+    }
+    
+
+}
+
+
+
+

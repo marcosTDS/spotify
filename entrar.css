@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(90deg, #080606,#04ac0c);
+    
+} 
+
+.circulo {
+    position: absolute;
+    top: 13px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 12%;
+    margin-top: 3%;
+    
+}
+ 
+ 
+.celular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.prim {
+   
+    top: 13px;
+    position: relative;
+    top: 13px;
+    width: 290px;
+    height: 470px;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 70%;
+    margin-left: 3%;
+    margin-top: 2%;
+    color: white;
+
+}
+
+h3 {
+    padding-left: 37%;
+    padding-top: 15%;
+}
+
+.image {
+    position: absolute;
+    width: 100px;
+    padding-left: 15%;
+
+}
+
+img {
+    width: 100px;
+    padding-left: 55%;
+}
+
+.melhor {
+    padding-top: 3%;
+    padding-left: 15%;
+}
+
+.p {
+   margin-top: -8%;
+   padding-left: 60%;
+   font-size: 90%;
+}
+
+.list {
+    padding-top: 3%;
+    padding-left: 20%;
+    font-size: 90%;
+    font-weight: bolder;
+}
+
+.seg {
+    font-size: 70%;
+    padding-top: 20%;
+    padding-bottom: 6%;
+    color: white;
+ 
+}
+
+.terc {
+    margin-left: 1%;
+}
+
+
+
+footer {
+    background: white;
+    color:black;
+    margin-top: 0.9%;
+    margin-left: -0.6%;
+    margin-right: -0.5%;
+    margin-bottom: -10%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    font-weight: bolder;
+}
+
+span {
+    color: #04ac0c;
+    font-weight: bolder;
+}
