@@ -33,3 +33,39 @@ img:hover {
     scale:1.1;
 
 }
+
+@media(max-width: 550px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .text {
+        margin: 0 0 0 10%;
+        padding: 0;
+        font-size: 15px;
+        
+    }
+    .image {
+        padding-bottom: 5%;
+    
+    }
+    img {
+        width: 50%;
+        margin: 0 0 0% 26%;
+    }
+    .prim {
+        width: 100%;
+        margin-left: 52%;
+    }
+    .terc {
+        width: 100%;
+        margin-left: 52%;
+    }
+    .container {
+        grid-template-columns: none;
+    }
+    
+}
