@@ -1,67 +1,60 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* ===== NAVBAR ===== */
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: black;
+    padding: 0 5%;
     height: 10vh;
-    padding: 0 0 0 53%;
-    
 }
 
 .navegacao {
     list-style: none;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-
 }
+
 .navegacao li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+    letter-spacing: 2px;
+    margin-left: 20px;
 }
 
 .responsivo {
     display: none;
     cursor: pointer;
-    position: absolute;
 }
 
 .responsivo div {
-    width: 32px;
-    height: 2px;
+    width: 30px;
+    height: 3px;
     background: white;
-    margin: 8px;
-   
-
+    margin: 6px;
 }
 
-.links {
+/* ===== LINKS ===== */
+.links, .link {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
 }
 
-
-.link{
-    text-decoration: none;
-    color: white;
-}
-
-.link:hover {
+.link:hover, .links:hover {
     color: purple;
 }
 
+/* ===== CONTEÚDO PRINCIPAL ===== */
 h1 {
     text-align: center;
-    font-size: 110px;
+    font-size: 4rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 200%;
-    
+    margin-top: 10%;
     color: white;
-    
 }
 
 .botoes {
@@ -69,117 +62,122 @@ h1 {
     margin-top: 2%;
 }
 
-
 button {
-    padding: 2px 2px 2px 2px;
+    padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid white;
     background: #4fc455;
-    text-align: center;
-    
+    margin: 10px;
+    cursor: pointer;
 }
 
-.a {
+button:hover {
+    opacity: 0.9;
+}
+
+.a, .b {
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.b {
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 .premium {
     background: black;
-   
-    
-    
 }
 
+/* ===== BACKGROUND ===== */
 body {
     background: linear-gradient(90deg, #444,#000);
-    
-    
+    min-height: 100vh;
 }
 
-img {
-    position: absolute;
-    max-width: 160px;
-    margin-top: -3.5%;
-    padding: 0 0 0 3%;
-    transition: .8s all ease-in-out;
-    width: 100%;
-    
+/* ===== LOGO ===== */
+.imagem img {
+    max-width: 150px;
+    transition: .5s ease-in-out;
 }
 
-img:hover {
-    transform: scale(1.2);
+.imagem img:hover {
+    transform: scale(1.1);
 }
 
+/* ===== MEDIA QUERIES ===== */
 
-@media(max-width: 550px) {
-    * {
-        margin: 0;
+/* CELULARES até 600px */
+@media (max-width: 600px) {
+    nav {
+        padding: 0 10%;
     }
 
-    body {
-        overflow-x: hidden;
-    }
     .navegacao {
         position: absolute;
-        top: 3%;
+        top: 10vh;
         right: 0;
-        padding: 0;
-        width: 30%;
-        height: 100px;
+        background: black;
+        width: 60%;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
+        padding-top: 20px;
         transform: translateX(100%);
-       
+        transition: transform 0.3s ease-in-out;
     }
+
     .navegacao li {
-        margin-left: 0;
+        margin: 20px 0;
     }
+
     .responsivo {
         display: block;
-       margin: 0 0 0 30%;
-       padding: 0;
     }
-    
-    .imagem {
-        
-        display: flex;
-        justify-content: center;
-    }
-    img {
-        
-        margin-top: -8%;
-    }
+
     h1 {
-        margin: 0;
-        padding: 60% 0 0 0;
-        width: 100%;
-        font-size: 30px;
+        font-size: 2rem;
+        margin-top: 20%;
+        padding: 0 10px;
     }
-    .responsivo {
-        display: block;
-        padding: 0;
-    }
-    
+
     button {
-        border: 1px solid white;
-        padding: 0;
-
+        padding: 8px 15px;
+        font-size: 0.9rem;
     }
-    
-    
-
 }
 
+/* TABLETS 601px até 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    nav {
+        padding: 0 8%;
+    }
 
+    h1 {
+        font-size: 3rem;
+    }
 
+    button {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+}
 
+/* NOTEBOOKS até 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    nav {
+        padding: 0 12%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* DESKTOPS grandes acima de 1200px */
+@media (min-width: 1201px) {
+    nav {
+        padding: 0 15%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+}
