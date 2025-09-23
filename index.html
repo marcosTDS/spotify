@@ -12,17 +12,18 @@
         
        
        <header>
+          <div class="header-container">
         <div class="imagem">
         <img src="imagem/logo-spotify-1536.png">
     </div>
         <nav>
-        <div class="responsivo">
+        <div class="responsivo" id="btnMenu">
             <div class="linha1"></div>
             <div class="linha2"></div>
             <div class="linha3"></div>
         </div>
         
-            <ul class="navegacao">
+            <ul class="navegacao" id="menu">
                 <li><a href="" class="links">Premium</a></li>
                 <li><a href="" class="links">Help</a></li>
                 <li><a href="" class="links">Download</a></li>
@@ -31,8 +32,9 @@
                
                 <li><a href="" class="link" id="LINK"><b>SingUp</b></a></li>
             </ul>
-        </nav>           
-                           </header>
+        </nav>  
+         </div>         
+    </header>
        
     
 <body>
@@ -44,4 +46,14 @@
             </div>
     
 </body>
+<script>
+const btnMenu = document.getElementById('btnMenu');
+const menu = document.getElementById('menu');
+
+btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('ativa');
+});
+</script>
+
+
 </html>
