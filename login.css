@@ -1,5 +1,4 @@
-
-
+/* ===== BODY ===== */
 body {
     background-image: url(imagem/87353323-1.webp);
     background-repeat: no-repeat;
@@ -7,75 +6,106 @@ body {
     background-position: center;
     display: grid;
     place-items: center;
-    
-} 
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
 
+/* ===== BOTÃO VOLTAR MODERNO ===== */
+.btn-voltar {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 15px;
+    padding: 0.2rem 1rem 0.2rem 1rem;  /* deixa espaço para o texto */
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.6);
+    color: #4fc455;
+    border: 1px solid #4fc455;
+    border-radius: 5px;   /* leve arredondado */
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    width: 50px;
+}
+.btn-voltar:hover {
+    background: #4fc455;
+    color: #000;
+    transform: scale(1.1);    /* animação ao passar o mouse */
+}
+
+/* Mostrar botão apenas em celular e tablet */
+@media (max-width: 900px) {
+    .btn-voltar {
+        display: block;
+    }
+}
+
+/* ===== LOGO ===== */
 img {
-    position: absolute;
     max-width: 160px;
-    margin-top: -130px;
-    margin: center;
-    transition: .8s all ease-in-out;
-    width: 100%;
+    margin-bottom: 2rem;
+    transition: .5s all ease-in-out;
 }
 
 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
+/* ===== FORMULÁRIO ===== */
 form {
-   
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-   max-width: 28rem;
-   background: rgba(0, 0, 0, 0.61);
-   padding: 2rem;
-   margin-top: 4%;
-   border-radius: 10px;
-   padding-top: 7%;
-   
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 28rem;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 2rem;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
+/* ===== LABELS ===== */
 label {
-    color:rgb(252, 252, 252);
+    color: #fff;
     width: 100%;
-    align-self: flex-start;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
     transition: 0.15s linear;
 }
 
 label:hover {
-    color: #4fc455;;
+    color: #4fc455;
 }
 
+/* ===== INPUTS ===== */
 input {
-    font-size: 1.1875rem;
+    font-size: 1.1rem;
     color: #4fc455;
-    padding: 1rem 0 0.5rem 0;
+    padding: 0.8rem;
     width: 100%;
     border: none;
-    border-color: #a0a0a0;
-    border-bottom-width: 1px;
-    border-bottom-style:dotted;
-    margin-bottom: 3rem;
-    transition: 0.15s linear;
+    border-bottom: 1px dotted #a0a0a0;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
     background: rgba(0, 0, 0, 0.075);
+    transition: 0.15s linear;
 }
 
 input:focus {
     outline: none;
-   
+    border-bottom: 1px solid #4fc455;
 }
 
+/* ===== BUTTON ===== */
 button {
-    font-size: 0.8215rem;
-    line-height: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem;
     cursor: pointer;
     background: transparent;
     color: #4fc455;
@@ -86,12 +116,110 @@ button {
 }
 
 button:hover {
-    outline: none;
     background: linear-gradient(90deg, #000, #4fc455);
     color: #fff;
 }
+
+/* ===== LINKS ===== */
 a {
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+a:hover {
+    color: #4fc455;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* CELULARES até 600px */
+@media (max-width: 600px) {
+    form {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+
+    img {
+        max-width: 120px;
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+}
+
+/* TABLETS 601px até 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    form {
+        max-width: 80%;
+        padding: 2rem;
+    }
+
+    img {
+        max-width: 140px;
+        margin-bottom: 2rem;
+    }
+
+    input {
+        font-size: 1.05rem;
+        padding: 0.7rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+        padding: 0.9rem;
+    }
+
+    a {
+        font-size: 0.85rem;
+    }
+}
+
+/* NOTEBOOKS 901px até 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    form {
+        max-width: 28rem;
+        padding: 2rem;
+    }
+
+    img {
+        max-width: 150px;
+        margin-bottom: 2rem;
+    }
+
+    input {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* DESKTOPS acima de 1200px */
+@media (min-width: 1201px) {
+    form {
+        max-width: 28rem;
+        padding: 2rem;
+    }
+
+    img {
+        max-width: 160px;
+        margin-bottom: 2rem;
+    }
 }
