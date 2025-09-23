@@ -3,6 +3,26 @@ body {
     
 } 
 
+.btn-voltar {
+    display: none; /* só exibe em tablets e celulares */
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    background: rgba(0,0,0,0.5);
+    color: #4fc455;
+    border: 1px solid #393c39;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: #4fc455;
+    color: #000;
+}
 .circulo {
     position: absolute;
     top: 13px;
@@ -76,7 +96,7 @@ img {
 
 .seg {
     font-size: 70%;
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 6%;
     color: white;
  
@@ -112,6 +132,9 @@ span {
     * {
         margin: 0;
     }
+    .btn-voltar {
+        display: block;
+    }
     footer {
         padding: 0;
         width: 100.6%;
@@ -125,7 +148,7 @@ span {
     }
     .seg {
        text-align: center;
-       margin: -220% 0 0 0;
+       margin: -240% 0 0 0;
        
 
     }
